@@ -1,0 +1,73 @@
+:root {
+  /* Halloween Developer Palette */
+  --bg-midnight: #08090F;
+  --bg-charcoal: #11121B;
+  --bg-charcoal-light: #181926;
+  --bg-deep-purple: #21152F;
+  --bg-card: rgba(17, 18, 27, 0.85);
+  --bg-card-hover: rgba(26, 28, 43, 0.95);
+  --bg-input: #0c0d15;
+  --bg-terminal: #07080e;
+
+  /* Accent & Highlight Colors */
+  --ghost-purple: #A970FF;
+  --ghost-purple-light: #C49BFF;
+  --ghost-purple-glow: rgba(169, 112, 255, 0.25);
+  --toxic-green: #B8FF5C;
+  --toxic-green-glow: rgba(184, 255, 92, 0.25);
+  --spectral-cyan: #65E7FF;
+  --spectral-cyan-glow: rgba(101, 231, 255, 0.25);
+  --pumpkin-orange: #FF8A36;
+  --pumpkin-orange-glow: rgba(255, 138, 54, 0.25);
+  --moonlight-white: #F2F0FA;
+  --muted-gray: #9292A7;
+  --muted-dark: #4e4f63;
+  --error-red: #FF5D73;
+  --error-red-glow: rgba(255, 93, 115, 0.25);
+  --border-subtle: rgba(169, 112, 255, 0.15);
+  --border-focus: rgba(169, 112, 255, 0.5);
+  --border-card: rgba(146, 146, 167, 0.12);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+
+  /* Elevations */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 24px rgba(169, 112, 255, 0.18);
+  --shadow-toxic: 0 0 20px rgba(184, 255, 92, 0.15);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --sidebar-width: 250px;
+}
+
+/* Reduced Motion Mode Override */
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Standard Mode (Optional toggle to reduce supernatural glow) */
+.classic-theme {
+  --bg-deep-purple: #12131C;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --ghost-purple-glow: rgba(169, 112, 255, 0.08);
+}

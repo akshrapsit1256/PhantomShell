@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Database & SQLite
+*.db
+*.sqlite
+*.sqlite3
+phantomshell.db
+
+# Secrets & Environment Configurations
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Node & Frontend
+node_modules/
+frontend/dist/
+frontend/build/
+.npm
+.eslintcache
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+# Local environment configuration
+.env.*
+!.env.example
+
+# Python cache and test artifacts
+.pyre/
+.mypy_cache/
+.ruff_cache/
